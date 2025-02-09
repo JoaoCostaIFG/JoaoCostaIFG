@@ -21,6 +21,6 @@ jobs:
         run: |
           item="$(curl -s https://joaocosta.dev/rss | xq -r '.feed.entry[0]')"
           parsed_item="$(echo "$item" | jq '.title, .summary=.summary."#text", .url=.link."@href"')"
-          echo "$parsed_item" | /root/.local/bin/jinja2 README.j2 --format=json >README.md
+          echo "$parsed_item" | jinja2 README.j2 --format=json >README.md
           cat README.md
           
