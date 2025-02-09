@@ -15,15 +15,12 @@ jobs:
         run: |
           sudo apt update
           sudo apt install curl pipx jq
-          pipx install yq
+          pipx install yq jinja2-cli
 
       - name: Fetch latest blog post from RSS feed
         run: |
-          curl -s https://joaocosta.dev/rss
           item="$(curl -s https://joaocosta.dev/rss | xq -r '.feed.entry[0]')"
-          title="$(echo $item | jq -r '.title')"
-          summary="$(echo $item | jq -r '.summary."#text"')"
-          url="$(echo $item | jq -r '.link."@href"')"
-          echo $title
-          echo $summary
-          echo $url
+          parsed_item="$(echo "$item" | jq '.title, .summary=.summary."#text", .url=.link."@href"')"
+          echo "$parsed_item" | /root/.local/bin/jinja2 README.j2 --format=json >README.md
+          cat README.md
+          
