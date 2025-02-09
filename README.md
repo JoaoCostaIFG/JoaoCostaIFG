@@ -2,8 +2,6 @@
 
 My name is João Costa. I write code.
 
-I have a [website](https://joaocosta.dev) and a [wiki](https://wiki.joaocosta.dev).
-
-You can also find me on [gitlab](https://gitlab.com/JoaoCostaIFG).
+I have a [website](https://joaocosta.dev) and a [wiki](https://wiki.joaocosta.dev). You can also find me on [gitlab](https://gitlab.com/JoaoCostaIFG).
 
 ![Github Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoaoCostaIFG&theme=dark&hide=Jupyter%20Notebook&layout=compact)
