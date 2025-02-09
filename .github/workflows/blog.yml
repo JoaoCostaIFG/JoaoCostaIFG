@@ -1,0 +1,28 @@
+name: Fetch latest blog post
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Install dependencies
+        run: |
+          apt update
+          apt install curl pipx jq
+          pipx install yq
+
+      - name: Fetch latest blog post from RSS feed
+        run: |
+          item="$(curl -s https://joaocosta.dev/rss | xq -r '.feed.entry[0]')"
+          title="$(echo $item | jq -r '.title')"
+          summary="$(echo $item | jq -r '.summary."#text"')"
+          url="$(echo $item | jq -r '.link."@href"')"
+          echo $title
+          echo $summary
+          echo $url
