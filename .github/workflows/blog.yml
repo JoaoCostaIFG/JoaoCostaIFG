@@ -1,6 +1,10 @@
 name: Fetch latest blog post
 
 on:
+  push:
+    branches: [ "master" ]
+  schedule:
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -20,7 +24,13 @@ jobs:
       - name: Fetch latest blog post from RSS feed
         run: |
           item="$(curl -s https://joaocosta.dev/rss | xq -r '.feed.entry[0]')"
+          echo $item
           parsed_item="$(echo "$item" | jq -r '{title: .title, summary: .summary."#text", url: .link."@href"}')"
           echo "$parsed_item" | jinja2 README.j2 --format=json >README.md
-          cat README.md
           
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+          add: 'README.md'
+          default_author: github_actions
+          message: 'Update latest blog post'
+          pathspec_error_handling: exitImmediately
