@@ -19,6 +19,7 @@ jobs:
 
       - name: Fetch latest blog post from RSS feed
         run: |
+          curl -s https://joaocosta.dev/rss
           item="$(curl -s https://joaocosta.dev/rss | xq -r '.feed.entry[0]')"
           title="$(echo $item | jq -r '.title')"
           summary="$(echo $item | jq -r '.summary."#text"')"
