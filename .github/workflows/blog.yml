@@ -13,8 +13,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install dependencies
         run: |
-          apt update
-          apt install curl pipx jq
+          sudo apt update
+          sudo apt install curl pipx jq
           pipx install yq
 
       - name: Fetch latest blog post from RSS feed
