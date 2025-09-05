@@ -6,7 +6,7 @@ I have a [website](https://joaocosta.dev) and a [wiki](https://wiki.joaocosta.de
 
 ## The latest from my blog
 
-[None](None)  
-> None
+[AI command generation in the fish shell](https://joaocosta.dev/blog/16)  
+> I want to share a cool little fish function that I started using to suggest/improve the commands I'm writting.
 
 ![Github Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JoaoCostaIFG&theme=dark&hide=Jupyter%20Notebook&layout=compact)
