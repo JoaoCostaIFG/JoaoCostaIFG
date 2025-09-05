@@ -23,7 +23,7 @@ jobs:
 
       - name: Fetch latest blog post from RSS feed
         run: |
-          item="$(curl -s https://joaocosta.dev/rss | xq -r '.feed.entry[0]')"
+          item="$(curl -s https://joaocosta.dev/rss | xq -r '.rss.channel.item[0]')"
           echo $item
           parsed_item="$(echo "$item" | jq -r '{title: .title, summary: .summary."#text", url: .link."@href"}')"
           echo "$parsed_item" | jinja2 README.j2 --format=json >README.md
