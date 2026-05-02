@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 
       - name: Generate stats card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@b4d2ef3b8051484b318d455163153b23a2b35fa2 # v1
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&theme=nord&hide=Jupyter%20Notebook,html,TeX
@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
-        uses: readme-tools/github-readme-stats-action@v1
+        uses: readme-tools/github-readme-stats-action@b4d2ef3b8051484b318d455163153b23a2b35fa2 # v1
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide_rank=true&theme=nord&hide=Jupyter%20Notebook,html,TeX
