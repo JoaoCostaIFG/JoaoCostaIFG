@@ -7,6 +7,6 @@ I have a [website](https://joaocosta.dev) and a [wiki](https://wiki.joaocosta.de
 ## The latest from my blog
 
 [PSA: YubiKey PGP smart card reader in Linux](https://joaocosta.dev/blog/18)  
-> Up until now, I've storing passkeys in my Bitwarden (Vaultwarden) instance. I like them, so I bought a YubiKey.
+> <p>Up until now, I've storing passkeys in my Bitwarden (Vaultwarden) instance. I like them, so I bought a YubiKey.</p>
 
 ![Github Langs](./profile/top-langs.svg)
