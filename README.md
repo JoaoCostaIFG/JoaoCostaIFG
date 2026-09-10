@@ -10,3 +10,7 @@ I have a [website](https://joaocosta.dev) and a [wiki](https://wiki.joaocosta.de
 > <p>Up until now, I've storing passkeys in my Bitwarden (Vaultwarden) instance. I like them, so I bought a YubiKey.</p>
 
 ![Github Langs](./profile/top-langs.svg)
+
+## License
+
+Licensed under the European Union Public Licence v. 1.2 (EUPL-1.2).
