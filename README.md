@@ -6,8 +6,8 @@ I have a [website](https://joaocosta.dev) and a [wiki](https://wiki.joaocosta.de
 
 ## The latest from my blog
 
-[PSA: YubiKey PGP smart card reader in Linux](https://joaocosta.dev/blog/18)  
-> <p>Up until now, I've storing passkeys in my Bitwarden (Vaultwarden) instance. I like them, so I bought a YubiKey.</p>
+[Cool dog tracker for traccar](https://joaocosta.dev/blog/19)  
+> <p>For a few years now, I've been self-hosting <a href="https://www.traccar.org/">Traccar</a> to track my phone. There isn't a real reason for it: it's just fun to keep a history of where I've been. It's one of those services that I kinda forget about, but now I have a dog that I want to track.</p>
 
 ![Github Langs](./profile/top-langs.svg)
 
