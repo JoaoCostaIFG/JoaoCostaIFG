@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Jo&#227;o Costa&#39;s GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 92, Total Commits  (last year) : 596, Total PRs: 96, Total Issues: 40, Contributed to (last year): 9</desc>
+        <desc id="descId">Total Stars Earned: 92, Total Commits  (last year) : 596, Total PRs: 97, Total Issues: 40, Contributed to (last year): 9</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 86.00746364771807;
+        stroke-dashoffset: 85.77887697240737;
       }
     }
   
@@ -188,7 +188,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >96</text>
+      >97</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
